@@ -1,0 +1,18 @@
+﻿<tests>
+  <node name="VoucherGeneratorSpecs" childrenCount="1" status="Success">
+    <node name="VoucherGeneratorSpecs" childrenCount="1" status="Success">
+      <node kind="NUnit Fixture" name="VoucherGeneratorSpecs.VoucherGenerationFeature" childrenCount="1" status="Success">
+        <output></output>
+        <node kind="NUnit Test" name="VoucherGeneratorSpecs.VoucherGenerationFeature.CalculateTotalAmountForDenominations" status="Success">
+          <output>Given I have entered denominations details
+-&gt; done: VoucherGenerationSteps.GivenIHaveEnteredDenominationsDetails() (0.1s)
+When I press Done
+-&gt; done: VoucherGenerationSteps.WhenIPressDone() (0.0s)
+Then I should see total amount $100 and message that says "Proceed for Payment"
+-&gt; done: VoucherGenerationSteps.ThenIShouldSeeTotalAmountAndMessageThatSays(100, "Proceed for Payment") (0.1s)
+</output>
+        </node>
+      </node>
+    </node>
+  </node>
+</tests>

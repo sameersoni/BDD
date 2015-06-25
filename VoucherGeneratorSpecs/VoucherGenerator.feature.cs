@@ -81,6 +81,17 @@ this.ScenarioSetup(scenarioInfo);
 #line hidden
             this.ScenarioCleanup();
         }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Issue Vouchers of specified denominations")]
+        public virtual void IssueVouchersOfSpecifiedDenominations()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Issue Vouchers of specified denominations", ((string[])(null)));
+#line 11
+this.ScenarioSetup(scenarioInfo);
+#line hidden
+            this.ScenarioCleanup();
+        }
     }
 }
 #pragma warning restore

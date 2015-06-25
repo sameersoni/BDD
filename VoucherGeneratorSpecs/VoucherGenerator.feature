@@ -8,3 +8,7 @@ Scenario: Calculate Total Amount for denominations
 	When I press Done
 	Then I should see total amount $100 and message that says "Proceed for Payment"
 
+Scenario: Issue Vouchers of specified denominations
+	Given
+	When
+	Then
