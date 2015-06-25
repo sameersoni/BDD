@@ -93,7 +93,7 @@ namespace VoucherGeneratorSpecs
         }
         
         [Then(@"each voucher code should be (.*) characters long")]
-        public void ThenEachVoucherCodeShouldBeCharactersLong(int p0)
+        public void ThenEachVoucherCodeShouldBeCharactersLong(int voucherCodeLength)
         {
             ScenarioContext.Current.Pending();
         }
@@ -102,48 +102,6 @@ namespace VoucherGeneratorSpecs
         public void ThenEachVoucherCodeShouldHaveAlphanumericCharacters()
         {
             ScenarioContext.Current.Pending();
-        }
-    }
-
-    public class VoucherSet
-    {
-        public Order Order { get; private set; }
-
-        public List<Voucher> Vouchers { get; private set; }
-
-        public VoucherSet(Order order)
-        {
-            Order = order;
-            CreateVouchers();
-        }
-
-        public List<Voucher> VouchersOf(int amount)
-        {
-            return Vouchers.FindAll(v => v.Value == amount);
-        }
-
-        private void CreateVouchers()
-        {
-            Vouchers = new List<Voucher>();
-            foreach (var lineItem in Order.LineItems)
-            {
-                for (var i = 0; i < lineItem.Quantity; i++)
-                {
-                    Vouchers.Add(new Voucher(Order.Currency, lineItem.Denomination));
-                }
-            }
-        }
-    }
-
-    public class Voucher
-    {
-        public string Currency { get; private set; }
-        public int Value { get; private set; }
-
-        public Voucher(string currency, int value)
-        {
-            Currency = currency;
-            Value = value;
         }
     }
 }

@@ -2,9 +2,9 @@
 
   Background: 
 	Given Following countries
-	| Country   | Currency | Denominations     |
-	| Singapore | SGD      | 5,10, 20, 50      |
-	| India     | INR      | 5,10, 20, 50, 100 |
+	| Country   | Currency | Denominations     | VoucherCodeLength |
+	| Singapore | SGD      | 5,10, 20, 50      | 5                 |
+	| India     | INR      | 5,10, 20, 50, 100 | 6                 |
 
   Scenario Outline: Order voucher form
     Given the client is from <country>
@@ -43,5 +43,5 @@
       |           5|     100|
       |          10|     150|
       |          50|     200|
-    #And each voucher code should be 5 characters long
+    And each voucher code should be 5 characters long
     #And each voucher code should have alphanumeric characters

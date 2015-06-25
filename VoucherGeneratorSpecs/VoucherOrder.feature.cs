@@ -71,15 +71,18 @@ namespace VoucherGeneratorSpecs
             TechTalk.SpecFlow.Table table1 = new TechTalk.SpecFlow.Table(new string[] {
                         "Country",
                         "Currency",
-                        "Denominations"});
+                        "Denominations",
+                        "VoucherCodeLength"});
             table1.AddRow(new string[] {
                         "Singapore",
                         "SGD",
-                        "5,10, 20, 50"});
+                        "5,10, 20, 50",
+                        "5"});
             table1.AddRow(new string[] {
                         "India",
                         "INR",
-                        "5,10, 20, 50, 100"});
+                        "5,10, 20, 50, 100",
+                        "6"});
 #line 4
  testRunner.Given("Following countries", ((string)(null)), table1, "Given ");
 #line hidden
@@ -187,6 +190,8 @@ namespace VoucherGeneratorSpecs
                         "200"});
 #line 41
     testRunner.Then("the following vouchers should be generated", ((string)(null)), table4, "Then ");
+#line 46
+    testRunner.And("each voucher code should be 5 characters long", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             this.ScenarioCleanup();
         }
