@@ -66,7 +66,7 @@ namespace VoucherGeneratorSpecs
         
         public virtual void FeatureBackground()
         {
-#line 3
+#line 4
   #line hidden
             TechTalk.SpecFlow.Table table1 = new TechTalk.SpecFlow.Table(new string[] {
                         "Country",
@@ -76,36 +76,45 @@ namespace VoucherGeneratorSpecs
             table1.AddRow(new string[] {
                         "Singapore",
                         "SGD",
-                        "5,10, 20, 50",
+                        "5, 10, 20, 50",
                         "5"});
             table1.AddRow(new string[] {
                         "India",
                         "INR",
-                        "5,10, 20, 50, 100",
+                        "5, 10, 20, 50, 100",
                         "6"});
-#line 4
+#line 5
  testRunner.Given("Following countries", ((string)(null)), table1, "Given ");
 #line hidden
         }
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Order voucher form")]
-        [NUnit.Framework.TestCaseAttribute("Singapore", "SGD", "5,10,20,50", null)]
+        [NUnit.Framework.CategoryAttribute("app")]
+        [NUnit.Framework.CategoryAttribute("app")]
+        [NUnit.Framework.TestCaseAttribute("Singapore", "SGD", "5, 10, 20, 50", null)]
         [NUnit.Framework.TestCaseAttribute("India", "INR", "5, 10, 20, 50, 100", null)]
         public virtual void OrderVoucherForm(string country, string currency, string denominations, string[] exampleTags)
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Order voucher form", exampleTags);
-#line 9
-  this.ScenarioSetup(scenarioInfo);
-#line 3
-  this.FeatureBackground();
-#line 10
-    testRunner.Given(string.Format("the client is from {0}", country), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+            string[] @__tags = new string[] {
+                    "app",
+                    "app"};
+            if ((exampleTags != null))
+            {
+                @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));
+            }
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Order voucher form", @__tags);
 #line 11
- testRunner.When("the client wants to order vouchers", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+  this.ScenarioSetup(scenarioInfo);
+#line 4
+  this.FeatureBackground();
 #line 12
-    testRunner.Then(string.Format("the display currency should be {0}", currency), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+    testRunner.Given(string.Format("the client is from {0}", country), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 13
+ testRunner.When("the client wants to order vouchers", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 14
+    testRunner.Then(string.Format("the display currency should be {0}", currency), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 15
     testRunner.And(string.Format("the selectable voucher denominations should be {0}", denominations), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             this.ScenarioCleanup();
@@ -113,14 +122,16 @@ namespace VoucherGeneratorSpecs
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Submit voucher orders")]
+        [NUnit.Framework.CategoryAttribute("app")]
         public virtual void SubmitVoucherOrders()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Submit voucher orders", ((string[])(null)));
-#line 21
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Submit voucher orders", new string[] {
+                        "app"});
+#line 23
   this.ScenarioSetup(scenarioInfo);
-#line 3
+#line 4
   this.FeatureBackground();
-#line 22
+#line 24
     testRunner.Given("the client is from Singapore", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
             TechTalk.SpecFlow.Table table2 = new TechTalk.SpecFlow.Table(new string[] {
@@ -135,13 +146,13 @@ namespace VoucherGeneratorSpecs
             table2.AddRow(new string[] {
                         "50",
                         "200"});
-#line 23
+#line 25
     testRunner.When("the client orders the following vouchers", ((string)(null)), table2, "When ");
-#line 28
-    testRunner.Then("the total face value should be 12000", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line 29
-    testRunner.And("the total number of vouchers should be 450", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 30
+    testRunner.Then("the total face value should be 12000", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 31
+    testRunner.And("the total number of vouchers should be 450", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 32
  testRunner.And("the order currency should be SGD", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             this.ScenarioCleanup();
@@ -149,14 +160,16 @@ namespace VoucherGeneratorSpecs
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Approve voucher orders")]
+        [NUnit.Framework.CategoryAttribute("app")]
         public virtual void ApproveVoucherOrders()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Approve voucher orders", ((string[])(null)));
-#line 33
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Approve voucher orders", new string[] {
+                        "app"});
+#line 36
   this.ScenarioSetup(scenarioInfo);
-#line 3
+#line 4
   this.FeatureBackground();
-#line 34
+#line 37
     testRunner.Given("the client is from Singapore", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
             TechTalk.SpecFlow.Table table3 = new TechTalk.SpecFlow.Table(new string[] {
@@ -171,9 +184,9 @@ namespace VoucherGeneratorSpecs
             table3.AddRow(new string[] {
                         "50",
                         "200"});
-#line 35
+#line 38
     testRunner.When("the client orders the following vouchers", ((string)(null)), table3, "When ");
-#line 40
+#line 43
     testRunner.And("the order is approved", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             TechTalk.SpecFlow.Table table4 = new TechTalk.SpecFlow.Table(new string[] {
@@ -188,10 +201,8 @@ namespace VoucherGeneratorSpecs
             table4.AddRow(new string[] {
                         "50",
                         "200"});
-#line 41
+#line 44
     testRunner.Then("the following vouchers should be generated", ((string)(null)), table4, "Then ");
-#line 46
-    testRunner.And("each voucher code should be 5 characters long", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             this.ScenarioCleanup();
         }

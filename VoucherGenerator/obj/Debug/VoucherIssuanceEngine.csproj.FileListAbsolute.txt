@@ -1,0 +1,5 @@
+C:\Users\Sameer Soni\documents\visual studio 2013\Projects\SimpleVoucherGeneration.specs\VoucherGenerator\bin\Debug\VoucherGenerator.dll
+C:\Users\Sameer Soni\documents\visual studio 2013\Projects\SimpleVoucherGeneration.specs\VoucherGenerator\bin\Debug\VoucherGenerator.pdb
+C:\Users\Sameer Soni\documents\visual studio 2013\Projects\SimpleVoucherGeneration.specs\VoucherGenerator\obj\Debug\VoucherIssuanceEngine.csprojResolveAssemblyReference.cache
+C:\Users\Sameer Soni\documents\visual studio 2013\Projects\SimpleVoucherGeneration.specs\VoucherGenerator\obj\Debug\VoucherGenerator.dll
+C:\Users\Sameer Soni\documents\visual studio 2013\Projects\SimpleVoucherGeneration.specs\VoucherGenerator\obj\Debug\VoucherGenerator.pdb

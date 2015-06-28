@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<test-run id="2" testcasecount="4" result="Passed" total="4" passed="0" failed="0" inconclusive="0" skipped="0" asserts="0" start-time="2015-06-28 16:11:03Z" end-time="2015-06-28 16:11:05Z" duration="1.214703">
+  <environment nunit-version="3.0.5610.33198" clr-version="4.0.30319.33440" os-version="Microsoft Windows NT 6.3.9600.0" platform="Win32NT" cwd="C:\Users\Sameer Soni\Documents\Visual Studio 2013\Projects\SimpleVoucherGeneration.specs\VoucherGeneratorSpecs" machine-name="WIN-BKDSB8CBP85" user="Sameer Soni" user-domain="WIN-BKDSB8CBP85" culture="en-US" uiculture="en-US" os-architecture="x64" />
+  <test-suite type="Assembly" id="1-1006" name="C:\Users\Sameer Soni\Documents\Visual Studio 2013\Projects\SimpleVoucherGeneration.specs\VoucherGeneratorSpecs\bin\Debug\VoucherGeneratorSpecs.dll" fullname="C:\Users\Sameer Soni\Documents\Visual Studio 2013\Projects\SimpleVoucherGeneration.specs\VoucherGeneratorSpecs\bin\Debug\VoucherGeneratorSpecs.dll" runstate="Runnable" testcasecount="4" result="Passed" duration="1.163496" total="4" passed="0" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="_PID" value="3128" />
+      <property name="_APPDOMAIN" value="test-domain-" />
+    </properties>
+    <test-suite type="Namespace" id="1-1007" name="VoucherGeneratorSpecs" fullname="VoucherGeneratorSpecs" runstate="Runnable" testcasecount="4" result="Passed" duration="1.145002" total="4" passed="0" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <test-suite type="TestFixture" id="1-1000" name="MobileVoucherOrderFeature" fullname="VoucherGeneratorSpecs.MobileVoucherOrderFeature" runstate="Runnable" testcasecount="4" result="Passed" duration="1.142516" total="4" passed="0" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties>
+          <property name="_DESCRIPTION" value="Mobile voucher order" />
+        </properties>
+        <test-case id="1-1005" name="ApproveVoucherOrders" fullname="VoucherGeneratorSpecs.MobileVoucherOrderFeature.ApproveVoucherOrders" runstate="Runnable" result="Passed" duration="0.500447" asserts="3">
+          <properties>
+            <property name="_DESCRIPTION" value="Approve voucher orders" />
+            <property name="_CATEGORIES" value="app" />
+          </properties>
+        </test-case>
+        <test-suite type="ParameterizedTest" id="1-1001" name="OrderVoucherForm" fullname="VoucherGeneratorSpecs.MobileVoucherOrderFeature.OrderVoucherForm" runstate="Runnable" testcasecount="2" result="Passed" duration="0.021663" total="2" passed="0" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties>
+            <property name="_CATEGORIES" value="app" />
+            <property name="_CATEGORIES" value="app" />
+            <property name="_DESCRIPTION" value="Order voucher form" />
+          </properties>
+          <test-case id="1-1002" name="OrderVoucherForm(&quot;Singapore&quot;,&quot;SGD&quot;,&quot;5, 10, 20, 50&quot;,null)" fullname="VoucherGeneratorSpecs.MobileVoucherOrderFeature.OrderVoucherForm(&quot;Singapore&quot;,&quot;SGD&quot;,&quot;5, 10, 20, 50&quot;,null)" runstate="Runnable" result="Passed" duration="0.010142" asserts="2" />
+          <test-case id="1-1003" name="OrderVoucherForm(&quot;India&quot;,&quot;INR&quot;,&quot;5, 10, 20, 50, 100&quot;,null)" fullname="VoucherGeneratorSpecs.MobileVoucherOrderFeature.OrderVoucherForm(&quot;India&quot;,&quot;INR&quot;,&quot;5, 10, 20, 50, 100&quot;,null)" runstate="Runnable" result="Passed" duration="0.000847" asserts="2" />
+        </test-suite>
+        <test-case id="1-1004" name="SubmitVoucherOrders" fullname="VoucherGeneratorSpecs.MobileVoucherOrderFeature.SubmitVoucherOrders" runstate="Runnable" result="Passed" duration="0.018522" asserts="3">
+          <properties>
+            <property name="_CATEGORIES" value="app" />
+            <property name="_DESCRIPTION" value="Submit voucher orders" />
+          </properties>
+        </test-case>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

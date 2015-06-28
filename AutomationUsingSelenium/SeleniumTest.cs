@@ -35,7 +35,6 @@ namespace AutomationUsingSelenium
 
             var welcomeMessage = WebDriver.FindElement(By.ClassName("welcome-message"));
             Assert.AreEqual(welcomeMessage.Text.Contains("Welcome"), true);
-
         }
 
         [TestCleanup()]
